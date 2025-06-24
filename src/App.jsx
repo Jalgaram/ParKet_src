@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.scss';
+import './scss/garam_LP.scss'
 import LiveParking from './components/LiveParking';
 
 function App() {
