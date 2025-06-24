@@ -63,8 +63,29 @@
         .Lp1{
             width: 335px;
             height: 335px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
             background-color: #39D5B8;
             border-radius: 16px;
+
+            .Lp1FontBox{
+                width: 100%;
+
+                h2{
+                    font: {
+                        size: 40px;
+                        weight: 600;
+                    }
+                    color: #fff;
+                }
+            }
+
+            img{
+                width: 278px;
+                height: auto;
+            }
         }
 
         .LpSlide{

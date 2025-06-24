@@ -24,7 +24,13 @@ const LiveParking = () => {
 
 
             <div className="LpBigBox">
-                <div className="Lp1"></div>
+                <div className="Lp1">
+                    <div className="Lp1FontBox">
+                        <h2>공용 <br /> 주차 현황</h2>
+                    </div>
+                    
+                    <img src="/img/공용.png" alt="공용주차장" />
+                </div>
 
                 <div className="LpSlide">
                     <Swiper
