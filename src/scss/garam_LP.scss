@@ -12,6 +12,7 @@
         font: {
             size: 33px;
         }
+        margin: 0;
     }
 
     .LpBtn{
@@ -71,7 +72,7 @@
             display: flex;
             justify-content: space-between;
 
-            div{
+            .LpSlide{
                 width: 335px;
                 height: 335px;
                 border: 2px solid #14C6A4;
