@@ -1,0 +1,82 @@
+.LiveParking{
+    width: 1400px;
+    height: 520px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: aliceblue;
+
+    h3{
+        text-align: center;
+        font: {
+            size: 33px;
+        }
+    }
+
+    .LpBtn{
+        text-align: center;
+
+        button{
+            width: 166px;
+            height: 50px;
+            margin: 0 30px;
+            background: transparent;
+            font-size: 18px;
+            color: #121212;
+        }
+
+        .LpBtn1{
+            border: 2px solid #14C6A4;
+
+            &:hover{
+                background-color: #14C6A4;
+                color: #fff;
+            }
+        }
+
+        .LpBtn2{
+            border: 2px solid #FF83D4;
+
+            &:hover{
+                background-color: #FF83D4;
+                color: #fff;
+            }
+        }
+
+        .LpBtn3{
+            border: 2px solid #FFB301;
+
+             &:hover{
+                background-color: #FFB301;
+                color: #fff;
+            }
+        }
+    }
+
+    .LpBigBox{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .Lp1{
+            width: 335px;
+            height: 335px;
+            background-color: #39D5B8;
+            border-radius: 16px;
+        }
+
+        .LpSlide{
+            width: 1043px;
+            display: flex;
+            justify-content: space-between;
+
+            div{
+                width: 335px;
+                height: 335px;
+                border: 2px solid #14C6A4;
+                border-radius: 16px;
+            }
+        }
+    }
+}
