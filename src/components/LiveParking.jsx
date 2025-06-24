@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../scss/garam_LP.scss'
 import { Button } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
