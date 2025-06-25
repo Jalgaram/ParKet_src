@@ -7,39 +7,39 @@ import InputGroup from 'react-bootstrap/InputGroup';
 
 const Mainslide = () => {
    return (
-      <div className='Mainslide' style={{
-         backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url(${process.env.PUBLIC_URL}/img/mainimg.png)`,
-         backgroundSize: 'cover',
-         backgroundPosition: 'center',
-         height: '920px',
-         color: 'white',
-      }}>
-         <Container style={{
+      <div className='Mainslide'  style={{
+    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url(${process.env.PUBLIC_URL}/img/mainimg.png)`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    height: '920px',
+    color: 'white',
+  
+   
+  }}>
+   <Container style={{
 
-            paddingTop: '400px',
-            textAlign: 'center'
-
-         }}>
-            <h2>PARKET</h2>
-            <p>파켓으로 편하게 충전하고 주차하세요!</p>
-
-            <InputGroup className="mb-4">
-               <Form.Control
-                  placeholder="search..."
-                  aria-label="Recipient's username"
-                  aria-describedby="basic-addon2"
-               />
-               <Button variant="outline-secondary" id="button-addon2">
-                  <span className="material-symbols-outlined">
-                     search
-                  </span>
-               </Button>
-            </InputGroup>
-            
-            <Button className='MBTN' variant="outline-primary">실시간 충전예약</Button>
+    
+    textAlign:'center'
+   
+  }}>
+         <h2>PARKET</h2>
+         <p>파켓으로 편하게 충전하고 주차하세요!</p>
+         <InputGroup className="mb-4">
+            <Form.Control
+               placeholder="search..."
+               aria-label="Recipient's username"
+               aria-describedby="basic-addon2"
+            />
+            <Button variant="outline-secondary" id="button-addon2">
+              <span class="material-symbols-outlined">
+search
+</span>
+            </Button>
+         </InputGroup>
+            <Button className='MBTN' variant="outline-primary">실시간 충전예약</Button> 
             <Button className='MBTN' variant="outline-primary"> 정기권 신청 </Button>
 
-         </Container>
+</Container>
       </div>
    )
 }
