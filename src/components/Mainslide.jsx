@@ -22,6 +22,7 @@ const Mainslide = () => {
          }}>
             <h2>PARKET</h2>
             <p>파켓으로 편하게 충전하고 주차하세요!</p>
+
             <InputGroup className="mb-4">
                <Form.Control
                   placeholder="search..."
@@ -34,6 +35,7 @@ const Mainslide = () => {
                   </span>
                </Button>
             </InputGroup>
+            
             <Button className='MBTN' variant="outline-primary">실시간 충전예약</Button>
             <Button className='MBTN' variant="outline-primary"> 정기권 신청 </Button>
 

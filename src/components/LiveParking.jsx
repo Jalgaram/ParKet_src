@@ -11,11 +11,13 @@ const LiveParking = () => {
     const [selectedType, setSelectedType] = useState('공용');
 
     const changeType = () => {
-        if (selectedType === '공용'){
+        if (selectedType === '공용') {
             return {
                 image: process.env.PUBLIC_URL + '/img/공용.png',
                 bgColor: '#39D5B8',
-                derColor: '#14C6A4'
+                derColor: '#14C6A4',
+                fontColor: '#14C6A4',
+                bgColor2: '#C4F2E8',
             }
         };
 
@@ -23,7 +25,9 @@ const LiveParking = () => {
             return {
                 image: process.env.PUBLIC_URL + '/img/여성전용.png',
                 bgColor: '#FFA6DF',
-                derColor: '#FFA6DF'
+                derColor: '#FFA6DF',
+                fontColor: '#FA70C9',
+                bgColor2: '#FFE6F6',
             }
         };
 
@@ -31,12 +35,37 @@ const LiveParking = () => {
             return {
                 image: process.env.PUBLIC_URL + '/img/장애인전용.png',
                 bgColor: '#FFCD58',
-                derColor: '#FFB301'
+                derColor: '#FFB301',
+                fontColor: '#FFB301',
+                bgColor2: '#FFEDC4',
             }
         };
     }
 
-    const { image, bgColor, derColor } = changeType();
+    const changeParking = (data) => {
+        if (selectedType === '공용') {
+            return {
+                car: data.parking_car,
+                seat: data.parking_seat
+            }
+        };
+
+        if (selectedType === '여성전용') {
+            return {
+                car: data.woman_car,
+                seat: data.woman_seat
+            }
+        };
+
+        if (selectedType === '장애인전용') {
+            return {
+                car: data.abbreviation_car,
+                seat: data.abbreviation_seat
+            }
+        };
+    }
+
+    const { image, bgColor, derColor, fontColor, bgColor2 } = changeType();
 
     return (
         <div className='LiveParking'>
@@ -61,7 +90,7 @@ const LiveParking = () => {
 
 
             <div className="LpBigBox">
-                <div className="Lp1" style={{background: bgColor}}>
+                <div className="Lp1" style={{ background: bgColor }}>
                     <div className="Lp1FontBox">
                         <h2>{selectedType} <br /> 주차 현황</h2>
                     </div>
@@ -83,8 +112,11 @@ const LiveParking = () => {
                         className="mySwiper LpSwiper">
 
                         {
-                            LpData.map((data, i) =>
-                                <SwiperSlide className="LpSlide" key={i} style={{border: `2px solid ${derColor}`}}>
+                            Lpdata.map((data, i) => {
+                                const { car, seat } = changeParking(data); 
+
+                                return (
+                                    <SwiperSlide className="LpSlide" key={i} style={{ border: `2px solid ${derColor}` }}>
                                     <div className="LpSlideBox">
                                         <div className="LpSlideFont">
                                             <h3>{data.title}</h3>
@@ -97,8 +129,8 @@ const LiveParking = () => {
                                             </div>
                                         </div>
 
-                                        <h3 style={{ color: derColor }}>
-                                            {data.parking_car}<span>대 가능</span> / {data.parking_seat}<span>면</span>
+                                        <h3 style={{ color: fontColor }}>
+                                            {car}<span>대 가능</span> / {seat}<span>면</span>
                                         </h3>
 
                                         <div className="electricBigBox">
@@ -109,21 +141,22 @@ const LiveParking = () => {
                                             </div>
 
 
-                                            <div className="electricBox">
+                                            <div className="electricBox" style={{ backgroundColor: bgColor2 }}>
                                                 <div className="electricfont">
                                                     <p>급속</p>
-                                                    <h3>{data.electric1}대 / 10대</h3>
+                                                    <h3 style={{ color: fontColor }}>{data.electric1}대 / 10대</h3>
                                                 </div>
 
                                                 <div className="electricfont">
                                                     <p>완속</p>
-                                                    <h3>{data.electric2}대 / 10대</h3>
+                                                    <h3 style={{ color: fontColor }}>{data.electric2}대 / 10대</h3>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </SwiperSlide>
-                            )
+                                );
+                            })
                         }
                     </Swiper>
                 </div>
