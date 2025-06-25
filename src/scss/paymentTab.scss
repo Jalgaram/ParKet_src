@@ -14,11 +14,16 @@ $gray2 :#D9D9D9;
 #payment {
 min-width: 1400px;
 padding: 0;
-margin: 0 auto;
+margin: 80px auto;
+
 
     .subtitle {
         text-align: center;
+        color: #121212;
+        font-size: 32px;
+        font-weight: 500;
         width: 1400px;
+        margin-bottom: 30px;
     }
 
     // 탭 바
@@ -29,6 +34,8 @@ margin: 0 auto;
         
         .nav-link {
         color: #121212;
+        font-size: 18px;
+        font-weight: 400;
         background-color: $parket_sub;
         border: 1px solid $parket_main_500;
 
@@ -58,7 +65,7 @@ margin: 0 auto;
         border: 1px solid $parket_main_500;
         border-radius: 0 0 10px 10px;
         border-top: none;
-        padding: 100px;
+        padding: 60px;
 
         &::after {
         content: "";
@@ -143,6 +150,7 @@ margin: 0 auto;
             color: #121212;
             border-color: $parket_main_500;
             padding: 10px 0;
+            font-size: 18px;
         }
 
         // 정산하기 버튼
@@ -152,6 +160,7 @@ margin: 0 auto;
             background-color: $parket_main_500;
             border-color: $parket_main_500;
             padding: 10px 0;
+            font-size: 18px;
         }
         }
 

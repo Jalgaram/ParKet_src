@@ -1,5 +1,5 @@
 import React from 'react'
-import "../scss/Mainslide.scss"
+import "../scss/mainslide.scss"
 import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -22,8 +22,8 @@ const Mainslide = () => {
     textAlign:'center'
    
   }}>
-         <h2>PARKET</h2>
-         <p>파켓으로 편하게 충전하고 주차하세요!</p>
+         <h1>PARKET</h1>
+         <h4>파켓으로 편하게 충전하고 주차하세요!</h4>
          <InputGroup className="mb-4">
             <Form.Control
                placeholder="search..."
