@@ -1,25 +1,40 @@
-.Bannerslide{ 
-   .carousel-indicators [data-bs-target]{background-color:#14C6A4 !important;}
-   a span{color: #14C6A4 !important;;}
-    .MBTN {
-    position: absolute;
-    bottom: 20%;
-    left: 18%;
-    padding: 9px 5.35% !important;
-    color: #ffffff !important;
-    background-color: #14C6A4!important;
-    border: 1PX solid #14C6A4;
-   font-weight: 400!important;
-   font-size: 20px;
-  }
-  .MBTN:hover{
-   color: #121212!important;
-   border: 1PX solid #14C6A4;
-  background-color: #ffffff!important;}
-  .BTNDIS{position: relative;}
-    .MBTN:active{
-  
-   border: 1PX solid #14C6A4!important;;
-}
+@charset 'utf-8';
+
+.Bannerslide {
+   .carousel-indicators [data-bs-target] {
+      background-color: #14C6A4 !important;
+   }
+
+   a span {
+      color: #14C6A4 !important;
+   }
+
+   .MBTN {
+      position: absolute;
+      bottom: 10%;
+      left: 20%;
+      padding: 5px 2% !important;
+      color: #ffffff !important;
+      background-color: #14C6A4 !important;
+      border: 1PX solid #14C6A4;
+      font-weight: 500 !important;
+      font-size: 18px;
+   }
+
+   .MBTN:hover {
+      color: #121212 !important;
+      border: 1PX solid #14C6A4;
+      background-color: #ffffff !important;
+   }
+
+   .BTNDIS {
+      position: relative;
+   }
+
+   .MBTN:active {
+
+      border: 1PX solid #14C6A4 !important;
+      ;
+   }
 
 }

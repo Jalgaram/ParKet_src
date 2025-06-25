@@ -31,7 +31,7 @@ const Mainslide = () => {
                aria-describedby="basic-addon2"
             />
             <Button variant="outline-secondary" id="button-addon2">
-              <span class="material-symbols-outlined">
+              <span className="material-symbols-outlined">
 search
 </span>
             </Button>

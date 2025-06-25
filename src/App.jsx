@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Shortcut from './components/Shortcut';
 import Notice from './components/Notice';
 import Footer from './components/Footer';
+import Payment from './components/Payment';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Header />
       <Mainslide />
       <Shortcut />
+      <Payment />
       <LiveParking />
       <Bannerslide />
       <Notice />
