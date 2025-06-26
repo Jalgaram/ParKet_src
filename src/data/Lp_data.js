@@ -16,8 +16,14 @@ let LpData = [
 
         electric1: 6,
         electric2: 10,
+
         congestion: { src: process.env.PUBLIC_URL + "/img/여유.png", name: "밀집도" },
-        congestion_font: '여유'
+        congestion_font: '여유',
+
+        //이용내역
+        num: 1,
+        date: '2025-00-00',
+        amount: 10000
     },
 
     {
@@ -39,7 +45,12 @@ let LpData = [
         abbreviation_seat: 10, 
 
         congestion: { src: process.env.PUBLIC_URL + "/img/혼잡.png", name: "밀집도" },
-        congestion_font: '혼잡'
+        congestion_font: '혼잡',
+
+        //이용내역
+        num: 2,
+        date: '2025-00-00',
+        amount: 20000
     },
 
     {
@@ -61,7 +72,12 @@ let LpData = [
         abbreviation_seat: 10, 
 
         congestion: { src: process.env.PUBLIC_URL + "/img/매우혼잡.png", name: "밀집도" },
-        congestion_font: '매우 혼잡'
+        congestion_font: '매우 혼잡',
+
+        //이용내역
+        num: 3,
+        date: '2025-00-00',
+        amount: 30000
     },
 
     {
@@ -83,7 +99,12 @@ let LpData = [
         abbreviation_seat: 10, 
 
         congestion: { src: process.env.PUBLIC_URL + "/img/매우혼잡.png", name: "밀집도" },
-        congestion_font: '매우 혼잡'
+        congestion_font: '매우 혼잡',
+
+        //이용내역
+        num: 4,
+        date: '2025-00-00',
+        amount: 10000
     },
 
     {
@@ -105,7 +126,12 @@ let LpData = [
         abbreviation_seat: 10, 
 
         congestion: { src: process.env.PUBLIC_URL + "/img/보통.png", name: "밀집도" },
-        congestion_font: '보통'
+        congestion_font: '보통',
+
+        //이용내역
+        num: 5,
+        date: '2025-00-00',
+        amount: 50000
     },
 
     {
@@ -127,7 +153,12 @@ let LpData = [
         abbreviation_seat: 20, 
 
         congestion: { src: process.env.PUBLIC_URL + "/img/혼잡.png", name: "밀집도" },
-        congestion_font: '혼잡'
+        congestion_font: '혼잡',
+
+        //이용내역
+        num: 6,
+        date: '2025-00-00',
+        amount: 60000
     },
 
 ];

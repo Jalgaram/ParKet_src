@@ -15,7 +15,6 @@ const Main = () => {
             <LiveParking />
             <Bannerslide />
             <Notice />
-            <Footer />
         </>
     )
 }
