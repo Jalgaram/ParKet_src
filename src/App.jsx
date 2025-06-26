@@ -7,18 +7,19 @@ import Header from './components/Header';
 import Notice from './components/Notice';
 import Footer from './components/Footer';
 import Payment from './components/Payment';
+import { Route, Routes } from 'react-router-dom';
+import Main from './components/Main';
 
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Mainslide />
-      {/* <Shortcut /> */}
-      <Payment />
-      <LiveParking />
-      <Bannerslide />
-      <Notice />
+
+      <Routes>
+        <Route path='/' element={<Main />}/>
+      </Routes>
+    
       <Footer />
     </div>
   );
