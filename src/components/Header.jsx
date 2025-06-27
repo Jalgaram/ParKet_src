@@ -23,8 +23,8 @@ const Header = () => {
                         <Nav>
                             <Nav.Link >주차정산</Nav.Link>
                             <Nav.Link as={Link} to='/usage'>이용내역</Nav.Link>
-                            <Nav.Link >정기권 조회/신청</Nav.Link>
-                            <Nav.Link >공지사항</Nav.Link>
+                            <Nav.Link as={Link} to='/commuterpass'>정기권 조회/신청</Nav.Link>
+                            <Nav.Link as={Link} to='/notice'>공지사항</Nav.Link>
                             <Nav.Link >로그인</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

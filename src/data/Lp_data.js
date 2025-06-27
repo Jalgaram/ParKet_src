@@ -23,7 +23,8 @@ let LpData = [
         //이용내역
         num: 1,
         date: '2025-00-00',
-        amount: 10000
+        amount: 10000,
+        orderNum: 2025000020250000, 
     },
 
     {
@@ -50,7 +51,8 @@ let LpData = [
         //이용내역
         num: 2,
         date: '2025-00-00',
-        amount: 20000
+        amount: 20000,
+        orderNum: 2025000020250000, 
     },
 
     {
@@ -77,7 +79,8 @@ let LpData = [
         //이용내역
         num: 3,
         date: '2025-00-00',
-        amount: 30000
+        amount: 30000,
+        orderNum: 2025000020250000, 
     },
 
     {
@@ -104,7 +107,8 @@ let LpData = [
         //이용내역
         num: 4,
         date: '2025-00-00',
-        amount: 10000
+        amount: 10000,
+        orderNum: 2025000020250000, 
     },
 
     {
@@ -131,7 +135,8 @@ let LpData = [
         //이용내역
         num: 5,
         date: '2025-00-00',
-        amount: 50000
+        amount: 50000,
+        orderNum: 2025000020250000, 
     },
 
     {
@@ -158,7 +163,8 @@ let LpData = [
         //이용내역
         num: 6,
         date: '2025-00-00',
-        amount: 60000
+        amount: 60000,
+        orderNum: 2025000020250000, 
     },
 
 ];

@@ -4,10 +4,16 @@ import Footer from './components/Footer';
 import { Route, Routes } from 'react-router-dom';
 import Main from './components/Main';
 import Usage from './components/Usage';
+import Dtnotice from './components/Dtnotice';
+import CommuterPass from './components/CommuterPass';
+import LpData2 from './data/Lp_data2';
 import UsageDetails from './components/UsageDetails';
+import { useState } from 'react';
+import LpData from './data/Lp_data';
 
 
 function App() {
+
   return (
     <div className="App">
       <Header />
@@ -15,7 +21,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Main />}/>
         <Route path='/usage' element={<Usage />}/>
-        <Route path='/usage/details/:num' element={<UsageDetails />}/>
+        <Route path='/usage/details/:id' element={<UsageDetails />}/>
+        <Route path='/commuterpass' element={<CommuterPass LpData2={LpData2}/>}/>
+        <Route path='/notice' element={<Dtnotice />}/>
       </Routes>
     
       <Footer />

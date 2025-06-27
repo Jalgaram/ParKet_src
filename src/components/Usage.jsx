@@ -32,12 +32,14 @@ const Usage = () => {
                             <p>이용상세내역</p>
                         </Link>
                     </div>
+
+                    <div className="usageMenu4"></div>
                 </div>
 
                 <div className="contentBoxWrap">
                     <h2>이용내역 조회</h2>
 
-                    <InputGroup className="mb-3">
+                    <InputGroup style={{marginBottom: '13px'}}> 
                         <Form.Control
                             placeholder="주차장 이름을 입력하세요."
                             aria-label="주차장 이름"
