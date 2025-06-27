@@ -75,33 +75,23 @@ export default function CommuterPass(props) {
         <img src={process.env.PUBLIC_URL + "/img/minibanner.jpg"} alt="미니배너" />
       </div>
 
-      <Container className='ConT' style={{ width: '1400px', marginTop: '60px', padding: '0' }}>
+      <div className='ConT' style={{ width: '1400px', marginTop: '60px', padding: '0' }}>
 
-        <div className='left'>
-          <Button className='BTN1' style={{ height: '80px', width: '217px', marginBottom: '5px' }}>정기권신청</Button>
-
-          <Button className='BTN2' style={{ height: '50px', width: '217px' }}>신청조회</Button>
+        <div className="left">
+          <div className="leftdt">
+            <h3 className='ntall'>정기권신청</h3>
+          </div>
+          <div className="leftdt2">
+            <h4>신청조회</h4>
+          </div>
 
           <img src={`${process.env.PUBLIC_URL}/img/sidebanner.jpg`} style={{ width: '217px', height: '217px', marginTop: '5px' }} alt="sidebanner" />
-
         </div>
 
         <div className='right' style={{ width: '1133px' }}>
-          <h4>정기권 조회</h4>
+          <h2>정기권 조회</h2>
 
           <div className="BTNG">
-            <Form.Select
-              aria-label="검색 유형 선택"
-              className="custom-select"
-              value={searchType}
-              onChange={(e) => {
-                setSearchType(e.target.value);
-                setCurrentPage(1); // 검색 유형 변경 시 페이지 1로 초기화
-              }}
-            >
-              <option value="parking">주차장으로 검색하기</option>
-              <option value="address">지역으로 검색하기</option>
-            </Form.Select>
             <InputGroup>
               <Form.Control
                 placeholder="search..."
@@ -117,6 +107,20 @@ export default function CommuterPass(props) {
                 <span className="material-symbols-outlined">search</span>
               </Button>
             </InputGroup>
+            
+            <Form.Select
+              aria-label="검색 유형 선택"
+              className="custom-select"
+              value={searchType}
+              onChange={(e) => {
+                setSearchType(e.target.value);
+                setCurrentPage(1); // 검색 유형 변경 시 페이지 1로 초기화
+              }}
+            >
+              <option value="parking">주차장으로 검색하기</option>
+              <option value="address">지역으로 검색하기</option>
+            </Form.Select>
+            
           </div>
 
           <Table>
@@ -153,7 +157,7 @@ export default function CommuterPass(props) {
                     <td>{later} ~ {endlater}</td>
                     <td><Button
                       className="DBTN"
-                      style={{ height: '27px', width: '58px', fontSize: '12px' }}
+                      style={{ height: '27px', width: '58px', fontSize: '12px'}}
                       onClick={(e) => {
                         e.currentTarget.blur(); // 포커스 제거
                         if (product.Remaining === 0) {
@@ -215,7 +219,7 @@ export default function CommuterPass(props) {
             <li>정기권 사용 시작일 이후: 홈페이지에서 신청가능 (정기권 신청→신청조회) , 잔여일 일할계산 금액의 80% 계좌환불</li>
           </ul>
         </div>
-      </Container>
+      </div>
     </div>
   )
 }
