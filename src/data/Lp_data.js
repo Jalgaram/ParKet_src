@@ -110,7 +110,7 @@ let LpData = [
         //이용내역
         num: 4,
         date: '2025-00-00',
-        amount: 10000,
+        amount: 40000,
         orderNum: 2025000020250004,
         pay: '카카오페이'
     },
