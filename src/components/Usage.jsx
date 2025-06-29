@@ -5,7 +5,7 @@ import LpData from '../data/Lp_data'
 import { Link, useNavigate } from 'react-router-dom'
 
 const Usage = () => {
-    const [usageData, setUsageData] = useState(LpData);
+    const [usageData] = useState(LpData);
     const navigate = useNavigate();
 
     return (

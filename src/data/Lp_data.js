@@ -12,7 +12,7 @@ let LpData = [
         woman_seat: 20,
 
         abbreviation_car: 20,
-        abbreviation_seat: 20, 
+        abbreviation_seat: 20,
 
         electric1: 6,
         electric2: 10,
@@ -24,7 +24,8 @@ let LpData = [
         num: 1,
         date: '2025-00-00',
         amount: 10000,
-        orderNum: 2025000020250000, 
+        orderNum: 2025000020250001,
+        pay: '신용카드'
     },
 
     {
@@ -43,7 +44,7 @@ let LpData = [
         woman_seat: 5,
 
         abbreviation_car: 2,
-        abbreviation_seat: 10, 
+        abbreviation_seat: 10,
 
         congestion: { src: process.env.PUBLIC_URL + "/img/혼잡.png", name: "밀집도" },
         congestion_font: '혼잡',
@@ -52,7 +53,8 @@ let LpData = [
         num: 2,
         date: '2025-00-00',
         amount: 20000,
-        orderNum: 2025000020250000, 
+        orderNum: 2025000020250002,
+        pay: '네이버페이'
     },
 
     {
@@ -71,7 +73,7 @@ let LpData = [
         woman_seat: 10,
 
         abbreviation_car: 0,
-        abbreviation_seat: 10, 
+        abbreviation_seat: 10,
 
         congestion: { src: process.env.PUBLIC_URL + "/img/매우혼잡.png", name: "밀집도" },
         congestion_font: '매우 혼잡',
@@ -80,7 +82,8 @@ let LpData = [
         num: 3,
         date: '2025-00-00',
         amount: 30000,
-        orderNum: 2025000020250000, 
+        orderNum: 2025000020250003,
+        pay: '토스페이'
     },
 
     {
@@ -99,7 +102,7 @@ let LpData = [
         woman_seat: 10,
 
         abbreviation_car: 5,
-        abbreviation_seat: 10, 
+        abbreviation_seat: 10,
 
         congestion: { src: process.env.PUBLIC_URL + "/img/매우혼잡.png", name: "밀집도" },
         congestion_font: '매우 혼잡',
@@ -108,7 +111,8 @@ let LpData = [
         num: 4,
         date: '2025-00-00',
         amount: 10000,
-        orderNum: 2025000020250000, 
+        orderNum: 2025000020250004,
+        pay: '카카오페이'
     },
 
     {
@@ -127,7 +131,7 @@ let LpData = [
         woman_seat: 15,
 
         abbreviation_car: 10,
-        abbreviation_seat: 10, 
+        abbreviation_seat: 10,
 
         congestion: { src: process.env.PUBLIC_URL + "/img/보통.png", name: "밀집도" },
         congestion_font: '보통',
@@ -136,7 +140,8 @@ let LpData = [
         num: 5,
         date: '2025-00-00',
         amount: 50000,
-        orderNum: 2025000020250000, 
+        orderNum: 2025000020250005,
+        pay: 'P페이'
     },
 
     {
@@ -155,7 +160,7 @@ let LpData = [
         woman_seat: 15,
 
         abbreviation_car: 20,
-        abbreviation_seat: 20, 
+        abbreviation_seat: 20,
 
         congestion: { src: process.env.PUBLIC_URL + "/img/혼잡.png", name: "밀집도" },
         congestion_font: '혼잡',
@@ -164,7 +169,8 @@ let LpData = [
         num: 6,
         date: '2025-00-00',
         amount: 60000,
-        orderNum: 2025000020250000, 
+        orderNum: 2025000020250006,
+        pay: '신용카드'
     },
 
 ];

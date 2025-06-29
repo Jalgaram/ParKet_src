@@ -20,7 +20,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Main />}/>
-        <Route path='/payment' element={<Dtnotice />}/>
+        <Route path='/payment'/>
         <Route path='/usage' element={<Usage />}/>
         <Route path='/usage/details/:id' element={<UsageDetails />}/>
         <Route path='/commuterpass' element={<CommuterPass LpData2={LpData2}/>}/>

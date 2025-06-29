@@ -141,6 +141,22 @@ margin: 80px auto;
             margin: 0;
         }
 
+        .checkboxLabel2{
+            display: block;
+        }
+
+        .form-check-input{
+            margin-top: 0;
+            margin-left: 5px;
+
+            &:active,
+            &:focus {
+                outline: #14C6A4;
+                box-shadow: none;
+
+            }
+        }
+
         // 조회하기 버튼
         .checkPay {
             width: 49%;

@@ -369,7 +369,7 @@ const Payment = () => {
                             onChange={() => setUsingCharger(!usingCharger)}
                         />
                         <br/>
-                        <Form.Label className='checkboxLabel'>충전하시는 분만 체크해주세요</Form.Label>
+                        <Form.Label className='checkboxLabel'>*충전하시는 분만 체크해주세요</Form.Label>
                         </div>
                     </Form.Group>
 
@@ -550,7 +550,7 @@ const Payment = () => {
                             checked={usingCharger}
                             onChange={() => setUsingCharger(!usingCharger)}
                         />
-                        <Form.Label className='checkboxLabel'>충전하시는 분만 체크해주세요</Form.Label>
+                        <Form.Label className='checkboxLabel checkboxLabel2'>*충전하시는 분만 체크해주세요</Form.Label>
                         </div>
                     </Form.Group>
 
