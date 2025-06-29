@@ -82,13 +82,9 @@ const UsageDetails = () => {
                                     <tr>
                                         <th rowSpan={2}>현금영수증 발행</th>
                                         <td colSpan={3} style={{ borderRight: 'transparent' }}>
-                                            <div className="detailsInput1">
-                                                <input type="radio" /> 현금영수증 발행 신청
-                                            </div>
+                                            <input type="radio" name='receipt'/> 현금영수증 발행 신청
 
-                                            <div className="detailsInput2">
-                                                <input type="radio" defaultChecked /> 신청 안함
-                                            </div>
+                                            <input type="radio" name='receipt' defaultChecked style={{marginLeft: '10px'}} /> 신청 안함
                                         </td>
                                     </tr>
                                     <tr>

@@ -223,7 +223,7 @@
                                 width: 350px;
                                 cursor: pointer;
                                 text-align: left;
-                                padding-left: 10px;
+                                padding-left: 10px !important;
 
                                 &:hover {
                                     color: #14C6A4 !important;
@@ -306,6 +306,7 @@
                         th {
                             padding: 0 !important;
                             vertical-align: middle;
+                            cursor: default;
                         }
 
                         th{
@@ -352,8 +353,6 @@
 
         .usageDetailsBoxWrap{
             height: 560px;
-
-            
         }
     }
 }

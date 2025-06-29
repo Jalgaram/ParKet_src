@@ -561,11 +561,11 @@ const Payment = () => {
                     </Form>
                     {
                         resultCost != '' ?
-                        <div id="paymentResult">
-                            <p className='inputShortLeft'>
+                        <div id="paymentResult paymentResult2">
+                            <p className='inputShortLeft inputShortLeft2'>
                                 예상 이용 시간 <span> {setResultTimeForm(resultTime)}</span>
                             </p>
-                            <p className='inputShortRight'>
+                            <p className='inputShortRight inputShortRight2'>
                                 예상 요금 <span> {resultCost}</span>
                             </p>
                         </div>:null
