@@ -157,6 +157,7 @@ const PaymentForm = () => {
                 <Form.Label className='paymentLabel'>차량번호</Form.Label>
                 <Form.Control
                     type='text'
+                    placeholder='장안구 > 성대환승 > 120가 3456'
                     disabled={disableInput}
                     value={writtenCarPlate}
                     onChange={(event) => {
