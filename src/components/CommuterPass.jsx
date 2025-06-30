@@ -94,7 +94,6 @@ export default function CommuterPass(props) {
           <div className="BTNG">
             <InputGroup>
               <Form.Control
-                placeholder="search..."
                 aria-label="검색어 입력"
                 aria-describedby="basic-addon2"
                 value={searchText}
