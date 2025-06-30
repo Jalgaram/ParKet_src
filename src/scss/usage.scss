@@ -314,7 +314,10 @@
                         th{
                             width: 200px;
                             text-align: center;
-                            font-size: 17px;
+                            font: {
+                                size: 17px;
+                                weight: 500;
+                            }
                             background-color: #f3f3f3;
                         }
 
