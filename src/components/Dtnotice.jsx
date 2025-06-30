@@ -60,7 +60,7 @@ const Dtnotice = () => {
                     <Accordion defaultActiveKey={defaultOpenKey}>
                         {notice.slice((page - 1) * 7, page * 7).map((item, i) => (
                             <Accordion.Item eventKey={i.toString()} key={item.id}>
-                                <Accordion.Header><p><span>{item.title}</span>{item.date}</p></Accordion.Header>
+                                <Accordion.Header><p>{item.title} <span style={{color: '#999'}}>{item.date}</span></p></Accordion.Header>
                                 <Accordion.Body>
                                     <pre>{item.content}</pre>
 
