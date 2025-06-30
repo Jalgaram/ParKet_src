@@ -70,7 +70,7 @@ export default function CommuterPass(props) {
   }
 
   return (
-    <div className='CommuterPass' style={{ paddingTop: '60px' }}>
+    <div className='CommuterPass' style={{ paddingTop: '75px' }}>
       <div className='minbanner'>
         <img src={process.env.PUBLIC_URL + "/img/minibanner.jpg"} alt="미니배너" />
       </div>
