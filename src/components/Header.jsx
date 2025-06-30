@@ -12,7 +12,7 @@ const Header = () => {
                 <div className='headerbox' style={{width: '1400px'}}>
                     <Navbar.Brand>
                         <Link as={Link} to='/'>
-                            <img className="logo" src={process.env.PUBLIC_URL + "../img/logo.png"} alt="logo" />
+                            <img className="logo" src={process.env.PUBLIC_URL + "/img/logo.png"} alt="logo" />
                         </Link>
                     </Navbar.Brand>
 
