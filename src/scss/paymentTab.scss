@@ -168,13 +168,12 @@ $gray2 :#D9D9D9;
                 margin: 0;
             }
 
-            .checkboxLabel2 {
-                display: block;
+            .checkboxLabel2{
+                display: block !important;
             }
 
             .form-check-input {
-                margin-top: 0;
-                margin-left: 5px;
+                margin: 2px 3px;
 
                 &:active,
                 &:focus {
