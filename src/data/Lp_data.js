@@ -138,7 +138,7 @@ let LpData = [
         //이용내역
         num: 5,
         date: '2025-00-00',
-        amount: 20000,
+        amount: 50000,
         orderNum: 2025000020250005,
         pay: 'P페이'
     },
@@ -167,7 +167,7 @@ let LpData = [
         //이용내역
         num: 6,
         date: '2025-00-00',
-        amount: 20000,
+        amount: 60000,
         orderNum: 2025000020250006,
         pay: '신용카드'
     },
