@@ -53,7 +53,7 @@ const UsageDetails = () => {
                                     <tr>
                                         <th>총 결제 금액</th>
 
-                                        <td colSpan={4} style={{ borderRight: 'transparent' }}><strong>{detailItem.amount}</strong>원</td>
+                                        <td colSpan={4} style={{ borderRight: 'transparent' }}><strong>{detailItem?.amount?.toLocaleString() ?? '0'}</strong>원</td>
                                     </tr>
 
                                     <tr>
