@@ -51,11 +51,11 @@ const Payment = () => {
                     className='paymentTab'
                 >
                     <Row>
-                    <Col className='paymentForm'>
+                    <Col sm={8} className='paymentForm'>
                         <EstimateForm key={key}/>
                     </Col>
 
-                    <Col className='paymentBanner'>
+                    <Col sm={4} className='paymentBanner'>
                         <div className='bannerBox'>
 
                         </div>

@@ -301,8 +301,8 @@ const EstimateForm = () => {
             className='chargingCar'
             checked={usingCharger}
             onChange={() => setUsingCharger(!usingCharger)}
-          />
-          <Form.Label className='checkboxLabel'>충전하시는 분만 체크해주세요</Form.Label>
+          /><br/>
+          <Form.Label className='checkboxLabel'>*충전하시는 분만 체크해주세요</Form.Label>
         </div>
       </Form.Group>
 

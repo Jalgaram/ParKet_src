@@ -66,9 +66,9 @@ $gray2 :#D9D9D9;
         border-top: none;
         padding: 60px;
         height: 501px;
-        &>.row{
-            flex-wrap: nowrap;
-        }
+        // &>.row{
+        //     flex-wrap: nowrap;
+        // }
         
 
         &::after {
@@ -78,7 +78,8 @@ $gray2 :#D9D9D9;
 
         // 요금 조회 정산 배너
         .paymentBanner {
-            flex-basis: calc(100% / 3);
+            // flex-basis: calc(100% / 3);
+            // flex-basis: none !important;
 
             .bannerBox {
                 background-color: $gray2;
@@ -95,7 +96,10 @@ $gray2 :#D9D9D9;
 }
 
 .paymentForm {
-    flex-basis: calc(200% / 3);
+    &.col{
+        flex-basis: calc(100% / 3);
+    }
+    
 
     .paymentLabel {
         width: 100px;
@@ -129,6 +133,10 @@ $gray2 :#D9D9D9;
         margin-bottom: 20px;
         float: left;
 
+        span{
+            color: #14C6A4;
+        }
+
         // span {
         //     margin-left: 9%;
 
@@ -146,6 +154,10 @@ $gray2 :#D9D9D9;
         margin-left: 0%;
         margin-bottom: 20px;
         float: right;
+
+        span{
+            color: #14C6A4;
+        }
 
         // span {
         //     margin-left: 9%;
@@ -175,7 +187,7 @@ $gray2 :#D9D9D9;
 
          .chargingCar {
             display: inline;
-            margin-left: 15px;
+            margin-left: 5px;
             
             input {
                 &:focus {
@@ -229,18 +241,17 @@ $gray2 :#D9D9D9;
 // 조회하기 버튼
 .checkPay {
     width: 49%;
+    height: 50px;
     margin-right: 1%;
-    background-color: #ffffff;
-    color: #121212;
-    border-color: $parket_main_500;
+    background-color: #ffffff !important;
+    color: #121212 !important;
+    border-color: $parket_main_500 !important;
     padding: 10px 0;
     font-size: 18px;
-
+    
     &:hover {
-        background-color: #ffffff;
-        color: #121212;
-        border-color: $parket_main_500;
-        font-weight: bold;
+        background-color: $parket_main_500 !important;
+        color: #fff !important;
     }
 }
 
@@ -248,16 +259,15 @@ $gray2 :#D9D9D9;
 .commitPay,
 .estimatePay {
     width: 49%;
+    height: 50px;
     margin-left: 1%;
-    background-color: $parket_main_500;
-    border-color: $parket_main_500;
+    background-color: $parket_main_500 !important;
+    border-color: $parket_main_500 !important;
     padding: 10px 0;
     font-size: 18px;
 
     &:hover {
-        background-color: $parket_main_500;
-        border-color: $parket_main_500;
-        font-weight: bold;
+       opacity: 0.6;
     }
 }
 

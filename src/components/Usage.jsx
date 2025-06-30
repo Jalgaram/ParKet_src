@@ -27,13 +27,12 @@ const Usage = () => {
                         </Link>
                     </div>
 
-                    <div className="usageMenu3">
+                    <div className="usageMenu5">
                         <Link to={Link} as={'/usage'} style={{ textDecoration: 'none' }}>
                             <p>이용상세내역</p>
                         </Link>
                     </div>
 
-                    <div className="usageMenu4"></div>
                 </div>
 
                 <div className="contentBoxWrap">

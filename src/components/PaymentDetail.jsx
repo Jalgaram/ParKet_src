@@ -19,16 +19,22 @@ const PaymentDetail = () => {
             <div className="usageContentWrap">
                 <div className="usageSubMenu">
                     <div className="usageMenu1">
-                        <h3>이용내역</h3>
+                        <h3>주차정산</h3>
                     </div>
 
-                    <div className="usageMenu2" onClick={() => setPaymentKey('payment')}>
+                    <div className={paymentKey == "payment"?
+                            "usageMenu2":"usageMenu3"
+                        }
+                        onClick={() => setPaymentKey('payment')}>
                         <Link to={Link} as={'/PaymentDetail'} style={{ textDecoration: 'none' }}>
                             <p>주차 요금 조회 / 정산</p>
                         </Link>
                     </div>
 
-                    <div className="usageMenu3" onClick={() => setPaymentKey('estimate')}>
+                    <div  className={paymentKey == "estimate"?
+                            "usageMenu2":"usageMenu3"
+                        }
+                        onClick={() => setPaymentKey('estimate')}>
                         <Link to={Link} as={'/PaymentDetail'} style={{ textDecoration: 'none' }}>
                             <p>주차 예상 요금 조회</p>
                         </Link>
@@ -39,19 +45,6 @@ const PaymentDetail = () => {
 
                 <div className="contentBoxWrap">
                     <h2>주차 요금 조회</h2>
-
-                    <InputGroup style={{marginBottom: '13px'}}> 
-                        <Form.Control
-                            placeholder="주차장 이름을 입력하세요."
-                            aria-label="주차장 이름"
-                        />
-
-                        <Button id="usageButton">
-                            <span className="material-symbols-outlined usageInputBtn">
-                                search
-                            </span>
-                        </Button>
-                    </InputGroup>
 
                     <div className="contentBox">
                         {paymentKey == "payment"?
