@@ -39,7 +39,7 @@ const Usage = () => {
                 <div className="contentBoxWrap">
                     <h2>이용내역 조회</h2>
 
-                    <InputGroup style={{marginBottom: '13px'}}> 
+                    <InputGroup style={{ marginBottom: '13px' }}>
                         <Form.Control
                             placeholder="주차장 이름을 입력하세요."
                             aria-label="주차장 이름"
@@ -69,6 +69,7 @@ const Usage = () => {
                                         .slice()
                                         .sort((a, b) => b.num - a.num)
                                         .map((item) =>
+
                                             <tr key={item.num}>
                                                 <td style={{ color: '#333' }}>
                                                     {item.num}
@@ -83,7 +84,7 @@ const Usage = () => {
                                                 </td>
 
                                                 <td>
-                                                    {item.amount.toLocaleString()}원
+                                                    {item.amount?.toLocaleString() ?? '0'}원
                                                 </td>
                                             </tr>
                                         )

@@ -265,8 +265,10 @@
 
         //이용상세내역
         .usageDetailsBox {
+            height: 474px !important;
             border: 1px solid #dee2e6;
-            border-bottom: none;
+            border-bottom: none !important;
+            border-radius: 0 !important;
 
             .usageDetails1 {
                 width: 100%;
@@ -274,6 +276,7 @@
                 .usageDetilsFont {
                     width: 100%;
                     padding: 10px;
+                    margin: 0 !important;
 
                     p {
                         margin: 0;
@@ -298,6 +301,7 @@
                 .usageDeiailsTb {
                     height: 350px;
                     border-left: transparent;
+                    margin: 0;
 
                     tr {
                         height: 40px;

@@ -53,7 +53,7 @@ const UsageDetails = () => {
                                     <tr>
                                         <th>총 결제 금액</th>
 
-                                        <td colSpan={4} style={{ borderRight: 'transparent' }}><strong>{detailItem.amount.toLocaleString()}</strong>원</td>
+                                        <td colSpan={4} style={{ borderRight: 'transparent' }}><strong>{detailItem.amount}</strong>원</td>
                                     </tr>
 
                                     <tr>
@@ -66,15 +66,15 @@ const UsageDetails = () => {
 
                                     <tr>
                                         <th>실 결제 금액</th>
-                                        <td>{detailItem.amount.toLocaleString()}원</td>
+                                        <td>{detailItem?.amount?.toLocaleString() ?? '0'}원</td>
 
                                         <th>P포인트 총 적립액</th>
-                                        <td style={{ borderRight: 'transparent' }}><span>{Math.floor(detailItem.amount * 0.1).toLocaleString()}</span>원</td>
+                                        <td style={{ borderRight: 'transparent' }}><span>{Math.floor(detailItem.amount * 0.1).toLocaleString() ?? '0'}</span>원</td>
                                     </tr>
 
                                     <tr>
                                         <th>결제하신 금액</th>
-                                        <td colSpan={4} style={{ borderRight: 'transparent' }}>{detailItem.pay} :  <strong>{detailItem.amount.toLocaleString()}</strong>원</td>
+                                        <td colSpan={4} style={{ borderRight: 'transparent' }}>{detailItem.pay} :  <strong>{detailItem?.amount?.toLocaleString() ?? '0'}</strong>원</td>
                                     </tr>
                                 </tbody>
 
